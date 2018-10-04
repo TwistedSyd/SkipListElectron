@@ -1,4 +1,4 @@
-# SkipList 
+# SkipListElectron
 A web-based app using Vue.js, CSS Bulma, and Firebase Firestore. 
 This app is meant to keep track of 'Skips' in the production line, 
 skips may be added, edited, and completed. This app allows department users to 
