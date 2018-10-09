@@ -1,23 +1,22 @@
 {
-  "name": "electron-quick-start",
+  "name": "SkipListElectron",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A production skip app.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icon1.png --prune=true --out=release-builds",
+    "package-win": "electron-packager . SkipListElectron --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icon1_72H_icon --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"SkipListElectron\"",    
+    "package-linux": "electron-packager . SkipListElectron --overwrite --asar=true --platform=linux --arch=x64 --icon=icon1.png --prune=true --out=release-builds"   
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/TwistedSyd/SkipListElectron",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "electron-packager": "^12.2.0"
   },
   "dependencies": {
     "npm": "^6.4.1"

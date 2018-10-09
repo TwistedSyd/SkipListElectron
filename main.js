@@ -10,7 +10,11 @@ function createWindow () {
     const menu = null
     Menu.setApplicationMenu(menu)
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600})
+    mainWindow = new BrowserWindow({
+        width: 800, 
+        height: 600,
+        //icon: path.join(__dirname, 'icon1.png')
+    })
 
     // and load the index.html of the app.
     mainWindow.loadURL('https://skiplist-48b4d.firebaseapp.com')
